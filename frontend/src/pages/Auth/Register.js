@@ -1,11 +1,13 @@
 import React from 'react'
-import './login.css'
 import { Link } from 'react-router-dom'
-const Login = () => {
+
+import './register.css'
+
+const Register = () => {
     return (
         <>
             <div className="container">
-                <h1>Login</h1>
+                <h1>Register</h1>
                 <div className="box">
                     <i className="fa-solid fa-envelope" />
                     <input type="email" name="email" id="email" placeholder="Email/Username" />
@@ -14,14 +16,13 @@ const Login = () => {
                     <i className="fa-solid fa-key" />
                     <input type="password" name="password" id="password" placeholder="Password" />
                 </div>
-                <button className="btn">Sign in</button>
+                <button className="btn">Sign Up</button>
                 <div>
-                    <span className=''>Don't have account? <Link className='text-red-500' to='/register'>Register</Link></span>
+                    <span className=''>Already have account? <Link className='text-red-500' to='/login'>Register</Link></span>
                 </div>
             </div>
-
         </>
     )
 }
 
-export default Login
+export default Register
